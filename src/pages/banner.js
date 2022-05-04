@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 function Banner({handleShowEaster}) {
-  const words = ["work", "perform", "engage", "grow"];
+  const words = ["PRODUCTS", "SOLUTIONS", "TECHNOLOGIES"];
   const [highlightText, setHighlightText] = useState("");
   useEffect(() => {
     let word = 0;
@@ -42,15 +42,20 @@ function Banner({handleShowEaster}) {
   return (
     <div className="container banner">
       <span className="h text">
-        Helping create beautiful experiences for web & mobile that<br/><span className="ht">{ highlightText || " " }</span>
-      </span>
+        <span className="ht1">WE</span><br/><span className="ht2">HELP</span><br/><span className="ht3">YOU BUILD</span><br/><span className="ht">{ highlightText || " " }</span>
+      </span> 
+    
       <span class="subtext">
-        Lorem ipsum dolor sit amet, consectetur adipiscing <b>elit</b>, <b>sed do eiusmod</b> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+         
+      
       </span>
+      
       <span className="h foottext">
-        <img src={process.env.PUBLIC_URL + '/me.jpeg'} onClick={abc}/>shikhar<span className="ht">.</span>sah.dev
+      <button class="button-53" role="button">Let's Build your Project</button>
       </span>
+      
     </div>
+    
   )
 }
 

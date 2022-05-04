@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 import './App.scss';
 import Banner from './pages/banner';
-import Easter from './pages/easter';
-import Experience from './pages/experience';
-import Intro from './pages/intro';
+import Intro from './pages/intro'
+
 
 let timeout = null;
 
@@ -43,26 +42,7 @@ function App() {
   }, [typed]);
   return (
     <div className="App">
-      <div className="fireflies">
-        <div className="firefly"></div>
-        <div className="firefly"></div>
-        <div className="firefly"></div>
-        <div className="firefly"></div>
-        <div className="firefly"></div>
-        <div className="firefly"></div>
-        <div className="firefly"></div>
-        <div className="firefly"></div>
-        <div className="firefly"></div>
-        <div className="firefly"></div>
-        <div className="firefly"></div>
-        <div className="firefly"></div>
-        <div className="firefly"></div>
-        <div className="firefly"></div>
-        <div className="firefly"></div>
-      </div>
-      {showEaster ? <Easter /> : ""}
       <Banner handleShowEaster={handleShowEaster}/>
-      <Experience />
       <Intro />
 
     </div>
